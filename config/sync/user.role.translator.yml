@@ -1,0 +1,15 @@
+uuid: bef350eb-faab-40c5-bc07-16ab85159425
+langcode: en
+status: true
+dependencies: {  }
+id: translator
+label: Translator
+weight: 3
+is_admin: null
+permissions:
+  - 'create content translations'
+  - 'delete content translations'
+  - 'translate interests taxonomy_term'
+  - 'translate menu_link_content'
+  - 'translate product node'
+  - 'update content translations'

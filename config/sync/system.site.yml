@@ -1,0 +1,14 @@
+uuid: ec0f7bec-aa79-4761-b5a2-02c658fd44d0
+name: 'Drupal 8 training'
+mail: ramprassad.suresh@capgemini.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,18 @@
+services:
+  d8_routing_demo.user_same_as_author:
+    class: Drupal\d8_routing_demo\Access\UserAuthorSame
+    tags:
+      - { name: access_check, applies_to: _user_same_as_author }
+  d8_routing_demo.data_controller:
+    class: Drupal\d8_routing_demo\Controller\DataController
+    arguments: ['@database', '@event_dispatcher']  
+  d8_routing_demo.kernel_response_subscriber:
+    class: Drupal\d8_routing_demo\EventSubscriber\KernelResponseSubscriber
+    arguments: ['@path.current']
+    tags:
+      - { name: event_subscriber }
+  d8_routing_demo.data_entry_event_subscriber:
+    class: Drupal\d8_routing_demo\EventSubscriber\DataEntryEventSubscriber
+    arguments: ['@logger.dblog']
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,34 @@
+uuid: eaf96ab1-68b4-4c8a-a247-287bc7648ed9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fe5e42ce-fd8c-42b7-9aeb-ee15d48cbf13'
+  module:
+    - block_content
+    - language
+  theme:
+    - bartik
+id: multilingualblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:fe5e42ce-fd8c-42b7-9aeb-ee15d48cbf13'
+settings:
+  id: 'block_content:fe5e42ce-fd8c-42b7-9aeb-ee15d48cbf13'
+  label: 'multilingual block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+      fr: fr
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

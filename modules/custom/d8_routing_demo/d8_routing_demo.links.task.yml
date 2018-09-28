@@ -1,0 +1,4 @@
+d8_routing_demo.hello_world.collection:
+  title: 'Hello world collection'
+  route_name: d8_routing_demo.hello_ram
+  base_route: d8_routing_demo.hello_world

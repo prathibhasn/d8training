@@ -1,0 +1,22 @@
+uuid: 69ed421b-4663-41e3-a326-3907b55e2689
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.rotator
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.rotator.body
+field_name: body
+entity_type: block_content
+bundle: rotator
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
